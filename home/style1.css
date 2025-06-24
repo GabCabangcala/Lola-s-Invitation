@@ -1,0 +1,157 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #f9f2f4;
+  color: #5a383e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: #fff;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(160, 120, 127, 0.2);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  padding: 32px 24px;
+}
+
+.inner-content header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.invitation-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #be7c8c;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.inner-content h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  color: #c9a76d;
+  margin-bottom: 0;
+}
+
+.age {
+  font-size: 2.2rem;
+  color: #c9a76d;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  color: #5a383e;
+  margin-bottom: 12px;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  margin: 18px 0;
+}
+
+.photo-container img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #c9a76d;
+  box-shadow: 0 2px 12px rgba(190, 124, 140, 0.15);
+}
+
+.details {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.date, .time, .location {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.decorative-divider {
+  border: none;
+  border-top: 2px dashed #c9a76d;
+  margin: 18px 0;
+  height: 0;
+}
+
+.message {
+  font-style: italic;
+  color: #be7c8c;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.program-flow {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  background: linear-gradient(to right, #d4a373, #c9a76d);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(212, 163, 115, 0.15);
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #c9a76d, #bb9c64);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.footer {
+  font-size: 0.95rem;
+  color: #a07c7f;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .card {
+    padding: 18px 6px;
+    max-width: 100%;
+  }
+  .photo-container img {
+    width: 90px;
+    height: 90px;
+  }
+}
